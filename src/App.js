@@ -1,29 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Message from './Message';
 
 function App() {
   return (
     <div className="App">
-    <Greeting />
-    <CurrentTime />
+      <Message text="Hello, this is a message!" />
     </div>
   );
 }
 
 export default App;
-
-
-function Greeting() {
-  return (
-    <div>
-    <h1>Привет, React!</h1>
-    </div>
-  );
-}
-
-function CurrentTime() {
-  return ( 
-    <div> {new Date().toLocaleTimeString()} </div>
-  );
-}
-
